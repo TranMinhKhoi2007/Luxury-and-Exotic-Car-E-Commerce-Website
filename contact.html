@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Showroom & Private Concierge | APEX MOTORS</title>
+  <meta name="description" content="Connect with our acquisition concierge, arrange private viewing appointments, or schedule bespoke commissioning consultations.">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/image-loader.js"></script>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="header-top" aria-label="Showroom Information">
+    <div class="container">
+      <div class="header-top-left">
+        <div class="top-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>concierge@apexmotors.luxury</span>
+        </div>
+        <div class="top-contact-item">
+          <i class="fa-solid fa-headset"></i>
+          <span>Global Client Concierge Available 24/7</span>
+        </div>
+        <span class="top-notice-pill">Demonstration Platform</span>
+      </div>
+      <div class="header-top-right">
+        <div class="top-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <span class="top-divider"></span>
+        <div class="header-lang-wrapper">
+          <i class="fa-solid fa-globe"></i>
+          <select id="header-language-select" class="header-lang-select" aria-label="Select Language">
+            <option value="en">English (US)</option>
+            <option value="vi">Tiếng Việt</option>
+          </select>
+        </div>
+        <span class="top-divider"></span>
+        <div id="header-user-btn" class="header-user-action">
+          <i class="fa-regular fa-user"></i>
+          <span>Client Portal</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="header-main" role="banner">
+    <div class="container">
+      <a href="index.html" class="header-brand">
+        <span class="header-brand-logo">
+          <i class="fa-solid fa-shield-halved"></i>
+          APEX <span>MOTORS</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop-grid.html" class="nav-link">Shop</a>
+        <div class="nav-item-has-children">
+          <a href="shop-grid.html" class="nav-link nav-link-parent">
+            Pages <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="nav-dropdown">
+            <a href="shop-details.html" class="nav-dropdown-link">Shop Details</a>
+            <a href="shoping-cart.html" class="nav-dropdown-link">Shopping Cart</a>
+            <a href="checkout.html" class="nav-dropdown-link">Checkout</a>
+            <a href="blog-details.html" class="nav-dropdown-link">Blog Details</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Wishlist Icon -->
+        <button type="button" class="action-icon-btn trigger-wishlist-modal" aria-label="View Saved Wishlist" title="Saved Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge header-wishlist-count" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Preview -->
+        <a href="shoping-cart.html" class="header-cart-preview" title="View Acquisition Cart">
+          <div class="action-icon-btn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="action-badge header-cart-count" style="display: none;">0</span>
+          </div>
+          <div class="header-cart-meta">
+            <span class="header-cart-label">Portfolio Total</span>
+            <span class="header-cart-total-price">$0</span>
+          </div>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <span class="header-brand-logo">APEX <span>MOTORS</span></span>
+      <button type="button" class="mobile-nav-close" aria-label="Close Menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="shop-grid.html" class="mobile-nav-link">Shop Collection</a>
+      <div class="mobile-nav-dropdown">
+        <a href="shop-details.html">Shop Details</a>
+        <a href="shoping-cart.html">Shopping Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="blog-details.html">Blog Details</a>
+      </div>
+      <a href="blog.html" class="mobile-nav-link">Editorial Blog</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact Showroom</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <div><i class="fa-solid fa-phone text-gold"></i> +1 (800) 273-9668</div>
+      <div><i class="fa-solid fa-envelope text-gold"></i> concierge@apexmotors.luxury</div>
+    </div>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <h1 class="breadcrumb-title">Contact Showroom</h1>
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+          <span class="breadcrumb-active">Contact Us</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information & Inquiry Form -->
+  <section class="contact-section section-spad">
+    <div class="container">
+      <!-- 4 Contact Cards -->
+      <div class="contact-info-grid">
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h4>Showroom Location</h4>
+          <p>740 5th Avenue, Luxury Mile<br>New York, NY 10019</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+          <h4>VIP Telephone</h4>
+          <p>+1 (800) APEX-AUTO<br>+1 (800) 273-9668</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h4>Direct Dispatch</h4>
+          <p>concierge@apexmotors.luxury<br>allocations@apexmotors.luxury</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
+          <h4>Showroom Hours</h4>
+          <p>Mon – Sat: 9:00 AM – 8:00 PM<br>Sun: By Appointment Only</p>
+        </div>
+      </div>
+
+      <!-- Contact Form & Map Placeholder Grid -->
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="checkout-box">
+          <h3 class="checkout-box-title">Commissioning & Acquisition Inquiry</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.9rem;">
+            Whether you are commissioning a bespoke allocation, inquiring about vehicle provenance, or arranging private transport, our senior concierge will respond within 4 hours.
+          </p>
+
+          <form id="contact-showroom-form" class="apex-form">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Lord Harrison Vance" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="client@luxury.estate" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="contact-phone">Telephone / Signal *</label>
+                <input type="tel" id="contact-phone" class="form-input" placeholder="+1 (555) 019-2834" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Inquiry Subject *</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Acquisition Inquiry: Porsche 911 GT3 RS" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Inquiry Details *</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Detail your interest, intended registration region, or timeline..." style="min-height: 140px;" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="align-self: flex-start; padding: 16px 36px;">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Strict Map Placeholder Box -->
+        <div class="map-placeholder-box" role="region" aria-label="Showroom Location Map">
+          <div class="map-placeholder-icon">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <h4 class="map-placeholder-title">APEX MOTORS Flagship Showroom</h4>
+          <p class="map-placeholder-desc">
+            Showroom location map – to be added later.
+          </p>
+          <div style="font-size: 0.78rem; color: var(--text-muted); background: rgba(0,0,0,0.3); padding: 8px 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+            <i class="fa-solid fa-circle-info text-gold"></i> GPS Coordinates: 40.7624° N, 73.9738° W (Demonstration)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-main" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1 -->
+          <div class="footer-col-brand">
+            <span class="footer-brand-logo">APEX <span>MOTORS</span></span>
+            <p class="footer-brand-desc">
+              Dedicated to the world's most discriminating collectors. Offering verified provenance allocations, climate-controlled global air logistics, and private circuit test handovers.
+            </p>
+            <div class="footer-contact-list">
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>740 5th Avenue, Luxury Mile, New York, NY 10019</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+1 (800) APEX-AUTO / +1 (800) 273-9668</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>concierge@apexmotors.luxury</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="footer-col-links">
+            <h4 class="footer-col-title">Collection</h4>
+            <ul class="footer-links-list">
+              <li><a href="shop-grid.html">Full Inventory</a></li>
+              <li><a href="shop-grid.html?category=Hypercar">Hypercar Royalty</a></li>
+              <li><a href="shop-grid.html?category=Supercar">Supercar Icons</a></li>
+              <li><a href="shop-grid.html?category=Sports%20Car">Track Specials</a></li>
+              <li><a href="shop-grid.html?category=Grand%20Tourer">Mega-GTs</a></li>
+              <li><a href="shop-grid.html?sort=price-high">Crown Allocations</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Customer Support -->
+          <div class="footer-col-links">
+            <h4 class="footer-col-title">VIP Services</h4>
+            <ul class="footer-links-list">
+              <li><a href="contact.html">Private Commissioning</a></li>
+              <li><a href="contact.html">Global Enclosed Airfreight</a></li>
+              <li><a href="shop-details.html">180-Point Certification</a></li>
+              <li><a href="checkout.html">Demo Escrow Checkout</a></li>
+              <li><a href="blog.html">Market Insights</a></li>
+              <li><a href="contact.html">Showroom Appointment</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Newsletter -->
+          <div class="footer-col-newsletter">
+            <h4 class="footer-col-title">Private Dispatches</h4>
+            <p class="footer-newsletter-text">
+              Subscribe to receive off-market allocations, confidential collector acquisitions, and technical bulletins.
+            </p>
+            <form class="footer-newsletter-form">
+              <input type="email" placeholder="Your private email..." required aria-label="Email for newsletter" />
+              <button type="submit">Join Circle</button>
+            </form>
+            <div class="footer-social-links">
+              <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 APEX MOTORS Inc. All rights reserved. <span class="footer-disclaimer-pill">Simulated E-Commerce Showroom Demonstration</span></p>
+        <p>Beyond Speed. Beyond Luxury.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/image-loader.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

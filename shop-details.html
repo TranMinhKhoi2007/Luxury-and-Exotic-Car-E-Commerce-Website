@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Details | APEX MOTORS</title>
+  <meta name="description" content="Examine complete specifications, telemetry figures, and provenance history for this rare supercar.">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/image-loader.js"></script>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="header-top" aria-label="Showroom Information">
+    <div class="container">
+      <div class="header-top-left">
+        <div class="top-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>concierge@apexmotors.luxury</span>
+        </div>
+        <div class="top-contact-item">
+          <i class="fa-solid fa-gem"></i>
+          <span>180-Point Mechanical Certification Guarantee</span>
+        </div>
+        <span class="top-notice-pill">Demonstration Platform</span>
+      </div>
+      <div class="header-top-right">
+        <div class="top-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <span class="top-divider"></span>
+        <div class="header-lang-wrapper">
+          <i class="fa-solid fa-globe"></i>
+          <select id="header-language-select" class="header-lang-select" aria-label="Select Language">
+            <option value="en">English (US)</option>
+            <option value="vi">Tiếng Việt</option>
+          </select>
+        </div>
+        <span class="top-divider"></span>
+        <div id="header-user-btn" class="header-user-action">
+          <i class="fa-regular fa-user"></i>
+          <span>Client Portal</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="header-main" role="banner">
+    <div class="container">
+      <a href="index.html" class="header-brand">
+        <span class="header-brand-logo">
+          <i class="fa-solid fa-shield-halved"></i>
+          APEX <span>MOTORS</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop-grid.html" class="nav-link">Shop</a>
+        <div class="nav-item-has-children">
+          <a href="shop-grid.html" class="nav-link nav-link-parent active">
+            Pages <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="nav-dropdown">
+            <a href="shop-details.html" class="nav-dropdown-link active">Shop Details</a>
+            <a href="shoping-cart.html" class="nav-dropdown-link">Shopping Cart</a>
+            <a href="checkout.html" class="nav-dropdown-link">Checkout</a>
+            <a href="blog-details.html" class="nav-dropdown-link">Blog Details</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Wishlist Icon -->
+        <button type="button" class="action-icon-btn trigger-wishlist-modal" aria-label="View Saved Wishlist" title="Saved Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge header-wishlist-count" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Preview -->
+        <a href="shoping-cart.html" class="header-cart-preview" title="View Acquisition Cart">
+          <div class="action-icon-btn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="action-badge header-cart-count" style="display: none;">0</span>
+          </div>
+          <div class="header-cart-meta">
+            <span class="header-cart-label">Portfolio Total</span>
+            <span class="header-cart-total-price">$0</span>
+          </div>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <span class="header-brand-logo">APEX <span>MOTORS</span></span>
+      <button type="button" class="mobile-nav-close" aria-label="Close Menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="shop-grid.html" class="mobile-nav-link">Shop Collection</a>
+      <div class="mobile-nav-dropdown">
+        <a href="shop-details.html" class="active">Shop Details</a>
+        <a href="shoping-cart.html">Shopping Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="blog-details.html">Blog Details</a>
+      </div>
+      <a href="blog.html" class="mobile-nav-link">Editorial Blog</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Showroom</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <div><i class="fa-solid fa-phone text-gold"></i> +1 (800) 273-9668</div>
+      <div><i class="fa-solid fa-envelope text-gold"></i> concierge@apexmotors.luxury</div>
+    </div>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <h1 class="breadcrumb-title" id="details-breadcrumb-current">Vehicle Dossier</h1>
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+          <a href="shop-grid.html">Shop Collection</a>
+          <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+          <a href="shop-grid.html" id="details-breadcrumb-brand">Marque</a>
+          <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+          <span class="breadcrumb-active" id="details-breadcrumb-title">Specifications</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Product Details Section -->
+  <section class="details-section section-spad">
+    <div class="container">
+      <div class="details-layout">
+        <!-- Left: Image Gallery -->
+        <div class="details-gallery">
+          <div class="details-gallery-main-wrapper">
+            <button type="button" class="gallery-nav-arrow gallery-nav-prev" id="gallery-prev-btn" aria-label="Previous Perspective">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div id="details-gallery-main">
+              <!-- Rendered by ProductDetails.renderGallery() -->
+            </div>
+            <button type="button" class="gallery-nav-arrow gallery-nav-next" id="gallery-next-btn" aria-label="Next Perspective">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <!-- Thumbnails Strip -->
+          <div class="details-gallery-thumbs" id="details-gallery-thumbs">
+            <!-- Rendered by ProductDetails.renderGallery() -->
+          </div>
+        </div>
+
+        <!-- Right: Information & Actions -->
+        <div class="details-info">
+          <span class="details-brand" id="details-brand">Marque</span>
+          <h2 class="details-title" id="details-title">Vehicle Model</h2>
+
+          <div class="details-badge-container" id="details-badge-container">
+            <!-- Dynamic badges -->
+          </div>
+
+          <div class="details-price-row">
+            <span class="details-price-current" id="details-price-current">$0</span>
+            <span class="details-price-original" id="details-price-original" style="display: none;">$0</span>
+          </div>
+
+          <p class="details-excerpt" id="details-excerpt">
+            Loading vehicle overview and specification highlights...
+          </p>
+
+          <!-- Key Specs Matrix -->
+          <div class="details-specs-grid" id="details-specs-grid">
+            <!-- Rendered by ProductDetails.renderInfo() -->
+          </div>
+
+          <!-- Actions -->
+          <div class="details-actions-row">
+            <div class="quantity-control" aria-label="Vehicle Quantity">
+              <button type="button" class="qty-btn" id="details-qty-minus"><i class="fa-solid fa-minus"></i></button>
+              <input type="number" id="details-qty-input" class="qty-input" value="1" min="1" max="10" />
+              <button type="button" class="qty-btn" id="details-qty-plus"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <button type="button" class="btn btn-gold" id="details-btn-add-cart">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+
+            <button type="button" class="btn btn-outline" id="details-btn-wishlist">
+              <i class="fa-regular fa-heart"></i> Add to Wishlist
+            </button>
+          </div>
+
+          <div class="details-extra-actions">
+            <button type="button" class="btn btn-outline btn-sm" id="details-btn-share">
+              <i class="fa-solid fa-share-nodes"></i> Share Product
+            </button>
+            <button type="button" class="btn btn-outline btn-sm" id="details-btn-contact">
+              <i class="fa-solid fa-comment-dots"></i> Contact Showroom
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Information Tabs -->
+      <div class="details-tabs-section">
+        <div class="details-tabs-nav" role="tablist">
+          <button type="button" class="details-tab-btn is-active" data-tab="tab-pane-desc" role="tab" aria-selected="true">
+            Description
+          </button>
+          <button type="button" class="details-tab-btn" data-tab="tab-pane-tech" role="tab" aria-selected="false">
+            Technical Specifications
+          </button>
+          <button type="button" class="details-tab-btn" data-tab="tab-pane-warranty" role="tab" aria-selected="false">
+            Concierge Handover & Warranty
+          </button>
+        </div>
+
+        <div class="details-tab-panes">
+          <div class="details-tab-pane is-active" id="tab-pane-desc" role="tabpanel">
+            <!-- Populated dynamically -->
+          </div>
+          <div class="details-tab-pane" id="tab-pane-tech" role="tabpanel">
+            <!-- Populated dynamically -->
+          </div>
+          <div class="details-tab-pane" id="tab-pane-warranty" role="tabpanel">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Cars -->
+      <div class="related-cars-section">
+        <div class="section-header">
+          <span class="section-tagline">Comparable Machines</span>
+          <h2 class="section-title">Related Supercars</h2>
+          <p class="section-subtitle">Examine alternative allocations within the same performance hierarchy.</p>
+        </div>
+        <div class="featured-cars-grid" id="details-related-grid">
+          <!-- Populated by ProductDetails.renderRelatedCars() -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-main" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1 -->
+          <div class="footer-col-brand">
+            <span class="footer-brand-logo">APEX <span>MOTORS</span></span>
+            <p class="footer-brand-desc">
+              Dedicated to the world's most discriminating collectors. Offering verified provenance allocations, climate-controlled global air logistics, and private circuit test handovers.
+            </p>
+            <div class="footer-contact-list">
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>740 5th Avenue, Luxury Mile, New York, NY 10019</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+1 (800) APEX-AUTO / +1 (800) 273-9668</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>concierge@apexmotors.luxury</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="footer-col-links">
+            <h4 class="footer-col-title">Collection</h4>
+            <ul class="footer-links-list">
+              <li><a href="shop-grid.html">Full Inventory</a></li>
+              <li><a href="shop-grid.html?category=Hypercar">Hypercar Royalty</a></li>
+              <li><a href="shop-grid.html?category=Supercar">Supercar Icons</a></li>
+              <li><a href="shop-grid.html?category=Sports%20Car">Track Specials</a></li>
+              <li><a href="shop-grid.html?category=Grand%20Tourer">Mega-GTs</a></li>
+              <li><a href="shop-grid.html?sort=price-high">Crown Allocations</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Customer Support -->
+          <div class="footer-col-links">
+            <h4 class="footer-col-title">VIP Services</h4>
+            <ul class="footer-links-list">
+              <li><a href="contact.html">Private Commissioning</a></li>
+              <li><a href="contact.html">Global Enclosed Airfreight</a></li>
+              <li><a href="shop-details.html">180-Point Certification</a></li>
+              <li><a href="checkout.html">Demo Escrow Checkout</a></li>
+              <li><a href="blog.html">Market Insights</a></li>
+              <li><a href="contact.html">Showroom Appointment</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Newsletter -->
+          <div class="footer-col-newsletter">
+            <h4 class="footer-col-title">Private Dispatches</h4>
+            <p class="footer-newsletter-text">
+              Subscribe to receive off-market allocations, confidential collector acquisitions, and technical bulletins.
+            </p>
+            <form class="footer-newsletter-form">
+              <input type="email" placeholder="Your private email..." required aria-label="Email for newsletter" />
+              <button type="submit">Join Circle</button>
+            </form>
+            <div class="footer-social-links">
+              <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 APEX MOTORS Inc. All rights reserved. <span class="footer-disclaimer-pill">Simulated E-Commerce Showroom Demonstration</span></p>
+        <p>Beyond Speed. Beyond Luxury.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/image-loader.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/product-details.js"></script>
+</body>
+</html>

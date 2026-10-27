@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX MOTORS – Luxury & Exotic Cars | Beyond Speed. Beyond Luxury.</title>
+  <meta name="description" content="Premier luxury showroom offering the world's most extraordinary supercars and hypercars from Porsche, Ferrari, Lamborghini, Bugatti, McLaren, and Koenigsegg.">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Image Loader early in head -->
+  <script src="js/image-loader.js"></script>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="header-top" aria-label="Showroom Information">
+    <div class="container">
+      <div class="header-top-left">
+        <div class="top-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>concierge@apexmotors.luxury</span>
+        </div>
+        <div class="top-contact-item">
+          <i class="fa-solid fa-gem"></i>
+          <span>Private Client Allocations 2026/2027</span>
+        </div>
+        <span class="top-notice-pill">Demonstration Platform</span>
+      </div>
+      <div class="header-top-right">
+        <div class="top-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <span class="top-divider"></span>
+        <div class="header-lang-wrapper">
+          <i class="fa-solid fa-globe"></i>
+          <select id="header-language-select" class="header-lang-select" aria-label="Select Language">
+            <option value="en">English (US)</option>
+            <option value="vi">Tiếng Việt</option>
+          </select>
+        </div>
+        <span class="top-divider"></span>
+        <div id="header-user-btn" class="header-user-action">
+          <i class="fa-regular fa-user"></i>
+          <span>Client Portal</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="header-main" role="banner">
+    <div class="container">
+      <a href="index.html" class="header-brand">
+        <span class="header-brand-logo">
+          <i class="fa-solid fa-shield-halved"></i>
+          APEX <span>MOTORS</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="shop-grid.html" class="nav-link">Shop</a>
+        <div class="nav-item-has-children">
+          <a href="shop-grid.html" class="nav-link nav-link-parent">
+            Pages <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="nav-dropdown">
+            <a href="shop-details.html" class="nav-dropdown-link">Shop Details</a>
+            <a href="shoping-cart.html" class="nav-dropdown-link">Shopping Cart</a>
+            <a href="checkout.html" class="nav-dropdown-link">Checkout</a>
+            <a href="blog-details.html" class="nav-dropdown-link">Blog Details</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Wishlist Icon -->
+        <button type="button" class="action-icon-btn trigger-wishlist-modal" aria-label="View Saved Wishlist" title="Saved Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge header-wishlist-count" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Preview -->
+        <a href="shoping-cart.html" class="header-cart-preview" title="View Acquisition Cart">
+          <div class="action-icon-btn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="action-badge header-cart-count" style="display: none;">0</span>
+          </div>
+          <div class="header-cart-meta">
+            <span class="header-cart-label">Portfolio Total</span>
+            <span class="header-cart-total-price">$0</span>
+          </div>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <span class="header-brand-logo">APEX <span>MOTORS</span></span>
+      <button type="button" class="mobile-nav-close" aria-label="Close Menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="shop-grid.html" class="mobile-nav-link">Shop Collection</a>
+      <div class="mobile-nav-dropdown">
+        <a href="shop-details.html">Shop Details</a>
+        <a href="shoping-cart.html">Shopping Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="blog-details.html">Blog Details</a>
+      </div>
+      <a href="blog.html" class="mobile-nav-link">Editorial Blog</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Showroom</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <div><i class="fa-solid fa-phone text-gold"></i> +1 (800) 273-9668</div>
+      <div><i class="fa-solid fa-envelope text-gold"></i> concierge@apexmotors.luxury</div>
+    </div>
+  </div>
+
+  <!-- Hero Search & Support Bar -->
+  <section class="hero-search-section">
+    <div class="container">
+      <div class="hero-search-container">
+        <form class="hero-search-form" action="shop-grid.html" method="GET">
+          <div class="search-brand-select-wrapper">
+            <select name="brand" class="search-brand-select" aria-label="Select Marque">
+              <option value="all">All Marques</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Ferrari">Ferrari</option>
+              <option value="Lamborghini">Lamborghini</option>
+              <option value="Bugatti">Bugatti</option>
+              <option value="McLaren">McLaren</option>
+              <option value="Aston Martin">Aston Martin</option>
+              <option value="Koenigsegg">Koenigsegg</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+          <div class="search-input-wrapper">
+            <input type="text" name="search" class="search-input" placeholder="Search your dream supercar..." aria-label="Search Supercars" />
+          </div>
+          <button type="submit" class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </button>
+        </form>
+
+        <div class="showroom-support-badge">
+          <div class="support-icon">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <div class="support-info">
+            <span class="support-phone">+1 (800) APEX-AUTO</span>
+            <span class="support-hours">24/7 VIP Concierge & Escrow</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Main Showcase -->
+  <section class="hero-section">
+    <div class="hero-bg-container">
+      <div 
+        class="image-slot hero-bg-slot" 
+        data-image="images/hero/hero-lamborghini.jpg"
+        data-filename="hero-lamborghini.jpg"
+        data-dimensions="1920x1080"
+        data-desc="Showroom Hero Banner – Flagship V12 Hypercar"
+        role="img"
+        aria-label="Lamborghini Revuelto Flagship Showcase"
+      >
+        <img 
+          src="images/hero/hero-lamborghini.jpg" 
+          alt="Lamborghini Revuelto Hero Banner" 
+          class="slot-real-image" 
+          onload="ImageLoader.onImageLoad(this)" 
+          onerror="ImageLoader.onImageError(this)" 
+        />
+        <div class="image-placeholder">
+          <div class="placeholder-inner">
+            <span class="placeholder-icon"><i class="fa-solid fa-car-side"></i></span>
+            <span class="placeholder-filename">hero-lamborghini.jpg</span>
+            <span class="placeholder-meta">
+              <span class="placeholder-size">1920x1080</span>
+              <span class="placeholder-dot">&bull;</span>
+              <span class="placeholder-desc">Homepage Hero Showcase Banner</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-label">EXCLUSIVE SUPERCAR COLLECTION</span>
+        <h1 class="hero-title">DRIVE BEYOND <span>LIMITS</span></h1>
+        <p class="hero-subtitle">
+          Discover the world's most extraordinary supercars and hypercars. Engineered for supreme track velocity, commissioned with bespoke haute horlogerie craftsmanship.
+        </p>
+        <div class="hero-actions">
+          <a href="shop-grid.html" class="btn btn-gold">
+            <span>Explore Collection</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="shop-details.html?id=lamborghini-revuelto" class="btn btn-outline">
+            <span>View Details</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Categories Carousel / Grid -->
+  <section class="brand-categories-section section-spad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">Elite Manufacturers</span>
+        <h2 class="section-title">Prestige Marques</h2>
+        <p class="section-subtitle">Curated allocations from the world's foremost automotive engineering houses.</p>
+      </div>
+
+      <div class="brand-grid">
+        <a href="shop-grid.html?brand=Porsche" class="brand-card">
+          <div class="brand-logo-slot">
+            <div 
+              class="image-slot" 
+              data-image="images/brands/brand-porsche.png"
+              data-filename="brand-porsche.png"
+              data-dimensions="200x200"
+              data-desc="Porsche Logo Asset"
+              style="width: 64px; height: 64px; border-radius: 50%;"
+            >
+              <img src="images/brands/brand-porsche.jpg" alt="Porsche" class="slot-real-image" onload="ImageLoader.onImageLoad(this)" onerror="ImageLoader.onImageError(this)" />
+              <div class="image-placeholder"><div class="placeholder-inner"><i class="fa-solid fa-shield" style="font-size: 1.2rem; color: #C9A45C;"></i></div></div>
+            </div>
+          </div>
+          <span class="brand-card-name">Porsche</span>
+          <span class="brand-card-count">4 Models</span>
+        </a>
+
+        <a href="shop-grid.html?brand=Ferrari" class="brand-card">
+          <div class="brand-logo-slot">
+            <div 
+              class="image-slot" 
+              data-image="images/brands/brand-ferrari.jpg"
+              data-filename="brand-ferrari.png"
+              data-dimensions="200x200"
+              data-desc="Ferrari Logo Asset"
+              style="width: 64px; height: 64px; border-radius: 50%;"
+            >
+              <img src="images/brands/brand-ferrari.png" alt="Ferrari" class="slot-real-image" onload="ImageLoader.onImageLoad(this)" onerror="ImageLoader.onImageError(this)" />
+              <div class="image-placeholder"><div class="placeholder-inner"><i class="fa-solid fa-horse" style="font-size: 1.2rem; color: #C9A45C;"></i></div></div>
+            </div>
+          </div>
+          <span class="brand-card-name">Ferrari</span>
+          <span class="brand-card-count">4 Models</span>
+        </a>
+
+        <a href="shop-grid.html?brand=Lamborghini" class="brand-card">
+          <div class="brand-logo-slot">
+            <div 
+              class="image-slot" 
+              data-image="images/brands/brand-lamborghini.png"
+              data-filename="brand-lamborghini.png"
+              data-dimensions="200x200"
+              data-desc="Lamborghini Logo Asset"
+              style="width: 64px; height: 64px; border-radius: 50%;"
+            >
+              <img src="images/brands/brand-lamborghini.jpg" alt="Lamborghini" class="slot-real-image" onload="ImageLoader.onImageLoad(this)" onerror="ImageLoader.onImageError(this)" />
+              <div class="image-placeholder"><div class="placeholder-inner"><i class="fa-solid fa-bullhorn" style="font-size: 1.2rem; color: #C9A45C;"></i></div></div>
+            </div>
+          </div>
+          <span class="brand-card-name">Lamborghini</span>
+          <span class="brand-card-count">3 Models</span>
+        </a>
+
+        <a href="shop-grid.html?brand=Bugatti" class="brand-card">
+          <div class="brand-logo-slot">
+            <div 
+              class="image-slot" 
+              data-image="images/brands/brand-bugatti.png"
+              data-filename="brand-bugatti.png"
+              data-dimensions="200x200"
+              data-desc="Bugatti Logo Asset"
+              style="width: 64px; height: 64px; border-radius: 50%;"
+            >
+              <img src="images/brands/brand-bugatti.png" alt="Bugatti" class="slot-real-image" onload="ImageLoader.onImageLoad(this)" onerror="ImageLoader.onImageError(this)" />
+              <div class="image-placeholder"><div class="placeholder-inner"><i class="fa-solid fa-crown" style="font-size: 1.2rem; color: #C9A45C;"></i></div></div>
+            </div>
+          </div>
+          <span class="brand-card-name">Bugatti</span>
+          <span class="brand-card-count">3 Models</span>
+        </a>
+
+        <a href="shop-grid.html?brand=McLaren" class="brand-card">
+          <div class="brand-logo-slot">
+            <div 
+              class="image-slot" 
+              data-image="images/brands/brand-mclaren.png"
+              data-filename="brand-mclaren.png"
+              data-dimensions="200x200"
+              data-desc="McLaren Logo Asset"
+              style="width: 64px; height: 64px; border-radius: 50%;"
+            >
+              <img src="images/brands/brand-mclaren.jpg" alt="McLaren" class="slot-real-image" onload="ImageLoader.onImageLoad(this)" onerror="ImageLoader.onImageError(this)" />
+              <div class="image-placeholder"><div class="placeholder-inner"><i class="fa-solid fa-wind" style="font-size: 1.2rem; color: #C9A45C;"></i></div></div>
+            </div>
+          </div>
+          <span class="brand-card-name">McLaren</span>
+          <span class="brand-card-count">3 Models</span>
+        </a>
+
+        <a href="shop-grid.html?brand=Aston%20Martin" class="brand-card">
+          <div class="brand-logo-slot">
+            <div 
+              class="image-slot" 
+              data-image="images/brands/brand-aston-martin.png"
+              data-filename="brand-aston-martin.png"
+              data-dimensions="200x200"
+              data-desc="Aston Martin Logo Asset"
+              style="width: 64px; height: 64px; border-radius: 50%;"
+            >
+              <img src="images/brands/brand-aston-martin.png" alt="Aston Martin" class="slot-real-image" onload="ImageLoader.onImageLoad(this)" onerror="ImageLoader.onImageError(this)" />
+              <div class="image-placeholder"><div class="placeholder-inner"><i class="fa-solid fa-feather" style="font-size: 1.2rem; color: #C9A45C;"></i></div></div>
+            </div>
+          </div>
+          <span class="brand-card-name">Aston Martin</span>
+          <span class="brand-card-count">2 Models</span>
+        </a>
+
+        <a href="shop-grid.html?brand=Koenigsegg" class="brand-card">
+          <div class="brand-logo-slot">
+            <div 
+              class="image-slot" 
+              data-image="images/brands/brand-koenigsegg.png"
+              data-filename="brand-koenigsegg.png"
+              data-dimensions="200x200"
+              data-desc="Koenigsegg Logo Asset"
+              style="width: 64px; height: 64px; border-radius: 50%;"
+            >
+              <img src="images/brands/brand-koenigsegg.png" alt="Koenigsegg" class="slot-real-image" onload="ImageLoader.onImageLoad(this)" onerror="ImageLoader.onImageError(this)" />
+              <div class="image-placeholder"><div class="placeholder-inner"><i class="fa-solid fa-meteor" style="font-size: 1.2rem; color: #C9A45C;"></i></div></div>
+            </div>
+          </div>
+          <span class="brand-card-name">Koenigsegg</span>
+          <span class="brand-card-count">2 Models</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Cars with Working Filter Tabs -->
+  <section class="featured-section section-spad" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">Handpicked Showroom Allocations</span>
+        <h2 class="section-title">Featured Supercars</h2>
+        <p class="section-subtitle">Exemplary machines certified for physical condition, telemetry fidelity, and full provenance documentation.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="featured-filter-tabs">
+        <button type="button" class="filter-tab-btn is-active" data-filter="all">All Marques</button>
+        <button type="button" class="filter-tab-btn" data-filter="Porsche">Porsche</button>
+        <button type="button" class="filter-tab-btn" data-filter="Lamborghini">Lamborghini</button>
+        <button type="button" class="filter-tab-btn" data-filter="Ferrari">Ferrari</button>
+        <button type="button" class="filter-tab-btn" data-filter="Bugatti">Bugatti</button>
+        <button type="button" class="filter-tab-btn" data-filter="McLaren">McLaren</button>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="featured-cars-grid" id="homepage-featured-grid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Promotional Banners -->
+  <section class="promotions-section section-spad">
+    <div class="container">
+      <div class="promotions-grid">
+        <!-- Banner 1 -->
+        <div class="promo-banner-card">
+          <div class="promo-banner-bg">
+            <div 
+              class="image-slot" 
+              data-image="images/banners/banner-porsche.jpg"
+              data-filename="banner-porsche.jpg"
+              data-dimensions="1000x500"
+              data-desc="Porsche Track Banner"
+              role="img"
+              aria-label="Porsche GT Series Track Weapon"
+            >
+              <img src="images/banners/banner-porsche.jpg" alt="Porsche Banner" class="slot-real-image" onload="ImageLoader.onImageLoad(this)" onerror="ImageLoader.onImageError(this)" />
+              <div class="image-placeholder"><div class="placeholder-inner"><i class="fa-solid fa-road"></i><span class="placeholder-filename">banner-porsche.jpg</span><span class="placeholder-meta">1000x500 &bull; Porsche Promo</span></div></div>
+            </div>
+          </div>
+          <div class="promo-banner-overlay"></div>
+          <div class="promo-banner-content">
+            <span class="promo-tag">Track Supremacy</span>
+            <h3 class="promo-title">The Art of Performance</h3>
+            <p class="promo-desc">Discover iconic Porsche models engineered for relentless track lap times and surgical driver feedback.</p>
+            <a href="shop-grid.html?brand=Porsche" class="btn btn-gold btn-sm">Explore Porsche</a>
+          </div>
+        </div>
+
+        <!-- Banner 2 -->
+        <div class="promo-banner-card">
+          <div class="promo-banner-bg">
+            <div 
+              class="image-slot" 
+              data-image="images/banners/banner-lamborghini.jpg"
+              data-filename="banner-lamborghini.jpg"
+              data-dimensions="1000x500"
+              data-desc="Lamborghini V12 Hybrid Banner"
+              role="img"
+              aria-label="Lamborghini V12 Hybrid Electrification"
+            >
+              <img src="images/banners/banner-lamborghini.jpg" alt="Lamborghini Banner" class="slot-real-image" onload="ImageLoader.onImageLoad(this)" onerror="ImageLoader.onImageError(this)" />
+              <div class="image-placeholder"><div class="placeholder-inner"><i class="fa-solid fa-bolt"></i><span class="placeholder-filename">banner-lamborghini.jpg</span><span class="placeholder-meta">1000x500 &bull; Lamborghini Promo</span></div></div>
+            </div>
+          </div>
+          <div class="promo-banner-overlay"></div>
+          <div class="promo-banner-content">
+            <span class="promo-tag">V12 Electrified</span>
+            <h3 class="promo-title">Unleash The Extraordinary</h3>
+            <p class="promo-desc">Explore Lamborghini's masterpieces combining 9,500 RPM naturally aspirated acoustics with hybrid power.</p>
+            <a href="shop-grid.html?brand=Lamborghini" class="btn btn-gold btn-sm">Explore Lamborghini</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Collections (3 Columns) -->
+  <section class="collections-section section-spad" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="collections-grid">
+        <!-- Column 1: Latest Arrivals -->
+        <div class="collection-column">
+          <div class="collection-header">
+            <h3 class="collection-title">Latest Arrivals</h3>
+            <div class="collection-arrows">
+              <button type="button" class="collection-arrow-btn" id="col-latest-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+              <button type="button" class="collection-arrow-btn" id="col-latest-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="collection-items" id="col-latest-items">
+            <!-- Dynamic Mini Cards -->
+          </div>
+        </div>
+
+        <!-- Column 2: Top Rated Supercars -->
+        <div class="collection-column">
+          <div class="collection-header">
+            <h3 class="collection-title">Top Rated Supercars</h3>
+            <div class="collection-arrows">
+              <button type="button" class="collection-arrow-btn" id="col-rated-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+              <button type="button" class="collection-arrow-btn" id="col-rated-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="collection-items" id="col-rated-items">
+            <!-- Dynamic Mini Cards -->
+          </div>
+        </div>
+
+        <!-- Column 3: Most Popular Models -->
+        <div class="collection-column">
+          <div class="collection-header">
+            <h3 class="collection-title">Most Popular Models</h3>
+            <div class="collection-arrows">
+              <button type="button" class="collection-arrow-btn" id="col-popular-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+              <button type="button" class="collection-arrow-btn" id="col-popular-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="collection-items" id="col-popular-items">
+            <!-- Dynamic Mini Cards -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Blog Section -->
+  <section class="latest-blog-section section-spad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">APEX Editorial Dispatches</span>
+        <h2 class="section-title">Inside The World of Supercars</h2>
+        <p class="section-subtitle">Deep dive perspectives on hypercar engineering, wind tunnel secrets, and blue-chip collector portfolios.</p>
+      </div>
+
+      <div class="latest-blog-grid" id="homepage-blog-grid">
+        <!-- Rendered dynamically from APEX_DATA.blogPosts -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-main" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1 -->
+          <div class="footer-col-brand">
+            <span class="footer-brand-logo">APEX <span>MOTORS</span></span>
+            <p class="footer-brand-desc">
+              Dedicated to the world's most discriminating collectors. Offering verified provenance allocations, climate-controlled global air logistics, and private circuit test handovers.
+            </p>
+            <div class="footer-contact-list">
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>740 5th Avenue, Luxury Mile, New York, NY 10019</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+1 (800) APEX-AUTO / +1 (800) 273-9668</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>concierge@apexmotors.luxury</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="footer-col-links">
+            <h4 class="footer-col-title">Collection</h4>
+            <ul class="footer-links-list">
+              <li><a href="shop-grid.html">Full Inventory</a></li>
+              <li><a href="shop-grid.html?category=Hypercar">Hypercar Royalty</a></li>
+              <li><a href="shop-grid.html?category=Supercar">Supercar Icons</a></li>
+              <li><a href="shop-grid.html?category=Sports%20Car">Track Specials</a></li>
+              <li><a href="shop-grid.html?category=Grand%20Tourer">Mega-GTs</a></li>
+              <li><a href="shop-grid.html?sort=price-high">Crown Allocations</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Customer Support -->
+          <div class="footer-col-links">
+            <h4 class="footer-col-title">VIP Services</h4>
+            <ul class="footer-links-list">
+              <li><a href="contact.html">Private Commissioning</a></li>
+              <li><a href="contact.html">Global Enclosed Airfreight</a></li>
+              <li><a href="shop-details.html">180-Point Certification</a></li>
+              <li><a href="checkout.html">Demo Escrow Checkout</a></li>
+              <li><a href="blog.html">Market Insights</a></li>
+              <li><a href="contact.html">Showroom Appointment</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Newsletter -->
+          <div class="footer-col-newsletter">
+            <h4 class="footer-col-title">Private Dispatches</h4>
+            <p class="footer-newsletter-text">
+              Subscribe to receive off-market allocations, confidential collector acquisitions, and technical bulletins.
+            </p>
+            <form class="footer-newsletter-form">
+              <input type="email" placeholder="Your private email..." required aria-label="Email for newsletter" />
+              <button type="submit">Join Circle</button>
+            </form>
+            <div class="footer-social-links">
+              <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 APEX MOTORS Inc. All rights reserved. <span class="footer-disclaimer-pill">Simulated E-Commerce Showroom Demonstration</span></p>
+        <p>Beyond Speed. Beyond Luxury.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/image-loader.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Homepage Dynamic Inits -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Featured Supercars with Tabs
+      const grid = document.getElementById("homepage-featured-grid");
+      const tabBtns = document.querySelectorAll(".featured-filter-tabs .filter-tab-btn");
+
+      const renderFeatured = (brandFilter = "all") => {
+        if (!grid) return;
+        const filtered = APEX_DATA.cars.filter(car => {
+          if (brandFilter === "all") return car.featured || car.badge;
+          return car.brand.toLowerCase() === brandFilter.toLowerCase();
+        }).slice(0, 8);
+
+        grid.innerHTML = filtered.map(car => Products.renderCard(car)).join("");
+      };
+
+      renderFeatured("all");
+      Products.bindCardEvents(grid);
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          tabBtns.forEach(b => b.classList.remove("is-active"));
+          btn.classList.add("is-active");
+          const brand = btn.getAttribute("data-filter");
+          renderFeatured(brand);
+        });
+      });
+
+      // 2. 3-Column Collections
+      const colLatest = document.getElementById("col-latest-items");
+      const colRated = document.getElementById("col-rated-items");
+      const colPopular = document.getElementById("col-popular-items");
+
+      if (colLatest) {
+        const items = APEX_DATA.cars.filter(c => c.collection === "latest").slice(0, 3);
+        colLatest.innerHTML = items.map(c => Products.renderMiniCard(c)).join("");
+      }
+      if (colRated) {
+        const items = APEX_DATA.cars.filter(c => c.collection === "topRated").slice(0, 3);
+        colRated.innerHTML = items.map(c => Products.renderMiniCard(c)).join("");
+      }
+      if (colPopular) {
+        const items = APEX_DATA.cars.filter(c => c.collection === "popular").slice(0, 3);
+        colPopular.innerHTML = items.map(c => Products.renderMiniCard(c)).join("");
+      }
+
+      // 3. Latest Blog
+      const blogGrid = document.getElementById("homepage-blog-grid");
+      if (blogGrid) {
+        const recentBlogs = APEX_DATA.blogPosts.slice(0, 3);
+        blogGrid.innerHTML = recentBlogs.map(post => `
+          <article class="blog-card">
+            <a href="blog-details.html?id=${post.id}" class="blog-card-img-link">
+              ${ImageLoader.createImageSlot({
+                src: post.image,
+                alt: post.title,
+                description: "Editorial Thumbnail",
+                dimensions: "1000x650",
+                aspectRatio: "16/10",
+                className: "blog-card-image"
+              })}
+            </a>
+            <div class="blog-card-content">
+              <div class="blog-card-meta">
+                <span class="blog-cat-pill">${post.category}</span>
+                <span class="blog-date"><i class="fa-regular fa-calendar"></i> ${post.date}</span>
+              </div>
+              <h3 class="blog-card-title"><a href="blog-details.html?id=${post.id}">${post.title}</a></h3>
+              <p class="blog-card-excerpt">${post.excerpt}</p>
+              <div class="blog-card-footer">
+                <a href="blog-details.html?id=${post.id}" class="blog-read-more-link">
+                  <span>Read Article</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        `).join("");
+      }
+    });
+  </script>
+</body>
+</html>

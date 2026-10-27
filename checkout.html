@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulated Vehicle Acquisition Escrow | APEX MOTORS</title>
+  <meta name="description" content="Finalize your simulated vehicle reservation and commission agreement with APEX MOTORS Private Client division.">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/image-loader.js"></script>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="header-top" aria-label="Showroom Information">
+    <div class="container">
+      <div class="header-top-left">
+        <div class="top-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>concierge@apexmotors.luxury</span>
+        </div>
+        <div class="top-contact-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Encrypted Client Escrow Simulation</span>
+        </div>
+        <span class="top-notice-pill">Demonstration Platform</span>
+      </div>
+      <div class="header-top-right">
+        <div class="top-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <span class="top-divider"></span>
+        <div class="header-lang-wrapper">
+          <i class="fa-solid fa-globe"></i>
+          <select id="header-language-select" class="header-lang-select" aria-label="Select Language">
+            <option value="en">English (US)</option>
+            <option value="vi">Tiếng Việt</option>
+          </select>
+        </div>
+        <span class="top-divider"></span>
+        <div id="header-user-btn" class="header-user-action">
+          <i class="fa-regular fa-user"></i>
+          <span>Client Portal</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="header-main" role="banner">
+    <div class="container">
+      <a href="index.html" class="header-brand">
+        <span class="header-brand-logo">
+          <i class="fa-solid fa-shield-halved"></i>
+          APEX <span>MOTORS</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop-grid.html" class="nav-link">Shop</a>
+        <div class="nav-item-has-children">
+          <a href="shop-grid.html" class="nav-link nav-link-parent active">
+            Pages <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="nav-dropdown">
+            <a href="shop-details.html" class="nav-dropdown-link">Shop Details</a>
+            <a href="shoping-cart.html" class="nav-dropdown-link">Shopping Cart</a>
+            <a href="checkout.html" class="nav-dropdown-link active">Checkout</a>
+            <a href="blog-details.html" class="nav-dropdown-link">Blog Details</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Wishlist Icon -->
+        <button type="button" class="action-icon-btn trigger-wishlist-modal" aria-label="View Saved Wishlist" title="Saved Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge header-wishlist-count" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Preview -->
+        <a href="shoping-cart.html" class="header-cart-preview" title="View Acquisition Cart">
+          <div class="action-icon-btn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="action-badge header-cart-count" style="display: none;">0</span>
+          </div>
+          <div class="header-cart-meta">
+            <span class="header-cart-label">Portfolio Total</span>
+            <span class="header-cart-total-price">$0</span>
+          </div>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <span class="header-brand-logo">APEX <span>MOTORS</span></span>
+      <button type="button" class="mobile-nav-close" aria-label="Close Menu">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="shop-grid.html" class="mobile-nav-link">Shop Collection</a>
+      <div class="mobile-nav-dropdown">
+        <a href="shop-details.html">Shop Details</a>
+        <a href="shoping-cart.html">Shopping Cart</a>
+        <a href="checkout.html" class="active">Checkout</a>
+        <a href="blog-details.html">Blog Details</a>
+      </div>
+      <a href="blog.html" class="mobile-nav-link">Editorial Blog</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Showroom</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <div><i class="fa-solid fa-phone text-gold"></i> +1 (800) 273-9668</div>
+      <div><i class="fa-solid fa-envelope text-gold"></i> concierge@apexmotors.luxury</div>
+    </div>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="breadcrumb-content">
+        <h1 class="breadcrumb-title">Escrow Reservation</h1>
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+          <a href="shop-grid.html">Shop Collection</a>
+          <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+          <a href="shoping-cart.html">Shopping Cart</a>
+          <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span>
+          <span class="breadcrumb-active">Checkout</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout Section -->
+  <section class="checkout-section section-spad">
+    <div class="container">
+      <!-- Demo Disclaimer -->
+      <div class="demo-disclaimer-box" style="margin-top: 0; margin-bottom: 36px;">
+        <i class="fa-solid fa-circle-info" style="font-size: 1.2rem; flex-shrink: 0; margin-top: 2px;"></i>
+        <div>
+          <strong>CONFIDENTIAL SIMULATION NOTICE:</strong> This checkout interface models the high-value escrow reservation protocols of APEX MOTORS. No actual payment card data is required, nor are real financial transactions executed.
+        </div>
+      </div>
+
+      <div class="checkout-layout">
+        <!-- Billing Details Form -->
+        <div class="checkout-box">
+          <h3 class="checkout-box-title">Client Registration & Delivery Dossier</h3>
+          <form id="checkout-billing-form" class="apex-form">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="billing-first-name">First Name *</label>
+                <input type="text" id="billing-first-name" class="form-input" placeholder="e.g. Sterling" required />
+              </div>
+              <div class="form-group">
+                <label for="billing-last-name">Last Name *</label>
+                <input type="text" id="billing-last-name" class="form-input" placeholder="e.g. Archer" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="billing-email">Client Email Address *</label>
+                <input type="email" id="billing-email" class="form-input" placeholder="client@luxury.estate" required />
+              </div>
+              <div class="form-group">
+                <label for="billing-phone">Telephone / Signal Contact *</label>
+                <input type="tel" id="billing-phone" class="form-input" placeholder="+1 (555) 019-2834" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="billing-country">Country / Jurisdiction *</label>
+                <input type="text" id="billing-country" class="form-input" placeholder="e.g. United States, Monaco, Switzerland" required />
+              </div>
+              <div class="form-group">
+                <label for="billing-city">City *</label>
+                <input type="text" id="billing-city" class="form-input" placeholder="e.g. New York, Geneva, London" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="billing-address">Private Residence / Hangar Address *</label>
+                <input type="text" id="billing-address" class="form-input" placeholder="Street, Villa, or Private Hangar" required />
+              </div>
+              <div class="form-group">
+                <label for="billing-postal">Postal Code *</label>
+                <input type="text" id="billing-postal" class="form-input" placeholder="e.g. 10019" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="billing-notes">Bespoke Commissioning Requests / Special Delivery Instructions</label>
+              <textarea id="billing-notes" class="form-textarea" placeholder="Specify preferences for climate-controlled uncrating, private circuit handover schedule, or custom telemetry key engraving..."></textarea>
+            </div>
+
+            <!-- Payment Simulation -->
+            <div class="payment-methods-wrapper">
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--accent-gold); letter-spacing: 0.08em; margin-bottom: 12px;">
+                Demonstration Settlement Method
+              </h4>
+              <div class="payment-options-group">
+                <label class="payment-option-card">
+                  <input type="radio" name="payment-method" value="VIP Escrow Bank Wire (Simulated)" checked />
+                  <div>
+                    <strong>VIP Escrow Bank Wire Transfer (Simulated)</strong>
+                    <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 4px;">
+                      Direct institutional escrow allocation instructions will be populated in your reservation dossier upon confirmation.
+                    </p>
+                  </div>
+                </label>
+                <label class="payment-option-card">
+                  <input type="radio" name="payment-method" value="Showroom Private Consultation & Escrow" />
+                  <div>
+                    <strong>Private Showroom Concierge & Contract Execution</strong>
+                    <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 4px;">
+                      Finalize acquisition terms and tailored bespoke financing during a private appointment at our 5th Avenue showroom.
+                    </p>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-block" id="checkout-submit-btn" style="padding: 16px;">
+              <span>Submit Vehicle Reservation Dossier</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Order Summary Side Card -->
+        <div class="checkout-box" style="height: fit-content;">
+          <h3 class="checkout-box-title">Acquisition Summary</h3>
+
+          <div id="checkout-empty-notice" style="display: none; color: #EF5350; font-size: 0.85rem; margin-bottom: 16px;">
+            <i class="fa-solid fa-circle-exclamation"></i> Your acquisition portfolio contains 0 vehicles. Please add vehicles before proceeding.
+          </div>
+
+          <div id="checkout-order-items" style="margin-bottom: 24px;">
+            <!-- Populated dynamically by Checkout.renderOrderSummary() -->
+          </div>
+
+          <div class="receipt-section" style="border-top: 1px solid var(--border-color); padding-top: 16px;">
+            <div class="cart-summary-row">
+              <span>Vehicles Subtotal:</span>
+              <strong id="checkout-subtotal">$0</strong>
+            </div>
+
+            <div class="cart-summary-row" id="checkout-discount-row" style="display: none; color: var(--accent-gold);">
+              <span>VIP Promotional Incentive:</span>
+              <strong id="checkout-discount">-$0</strong>
+            </div>
+
+            <div class="cart-summary-row">
+              <span>White-Glove Transport:</span>
+              <span style="color: #81C784;">Complimentary</span>
+            </div>
+
+            <div class="cart-summary-total" style="margin-bottom: 0;">
+              <span>Total Commitment:</span>
+              <span id="checkout-total" class="text-gold">$0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-main" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1 -->
+          <div class="footer-col-brand">
+            <span class="footer-brand-logo">APEX <span>MOTORS</span></span>
+            <p class="footer-brand-desc">
+              Dedicated to the world's most discriminating collectors. Offering verified provenance allocations, climate-controlled global air logistics, and private circuit test handovers.
+            </p>
+            <div class="footer-contact-list">
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>740 5th Avenue, Luxury Mile, New York, NY 10019</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+1 (800) APEX-AUTO / +1 (800) 273-9668</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>concierge@apexmotors.luxury</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="footer-col-links">
+            <h4 class="footer-col-title">Collection</h4>
+            <ul class="footer-links-list">
+              <li><a href="shop-grid.html">Full Inventory</a></li>
+              <li><a href="shop-grid.html?category=Hypercar">Hypercar Royalty</a></li>
+              <li><a href="shop-grid.html?category=Supercar">Supercar Icons</a></li>
+              <li><a href="shop-grid.html?category=Sports%20Car">Track Specials</a></li>
+              <li><a href="shop-grid.html?category=Grand%20Tourer">Mega-GTs</a></li>
+              <li><a href="shop-grid.html?sort=price-high">Crown Allocations</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Customer Support -->
+          <div class="footer-col-links">
+            <h4 class="footer-col-title">VIP Services</h4>
+            <ul class="footer-links-list">
+              <li><a href="contact.html">Private Commissioning</a></li>
+              <li><a href="contact.html">Global Enclosed Airfreight</a></li>
+              <li><a href="shop-details.html">180-Point Certification</a></li>
+              <li><a href="checkout.html">Demo Escrow Checkout</a></li>
+              <li><a href="blog.html">Market Insights</a></li>
+              <li><a href="contact.html">Showroom Appointment</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Newsletter -->
+          <div class="footer-col-newsletter">
+            <h4 class="footer-col-title">Private Dispatches</h4>
+            <p class="footer-newsletter-text">
+              Subscribe to receive off-market allocations, confidential collector acquisitions, and technical bulletins.
+            </p>
+            <form class="footer-newsletter-form">
+              <input type="email" placeholder="Your private email..." required aria-label="Email for newsletter" />
+              <button type="submit">Join Circle</button>
+            </form>
+            <div class="footer-social-links">
+              <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 APEX MOTORS Inc. All rights reserved. <span class="footer-disclaimer-pill">Simulated E-Commerce Showroom Demonstration</span></p>
+        <p>Beyond Speed. Beyond Luxury.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/image-loader.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
